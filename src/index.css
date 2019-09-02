@@ -72,7 +72,7 @@ button:hover {
 }
 .App {
     height: 100vh;
-    width: 90vw;
+    width: 100vw;
     display: grid;
     justify-content: center;
     align-content: start;
@@ -86,7 +86,6 @@ button:hover {
     display: grid;
     grid-template-columns: 200px 100px;
     grid-column-gap: 60px;
-    margin-left: -60px;
 }
 .current_time_block {
     display: grid;
