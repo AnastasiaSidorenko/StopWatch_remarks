@@ -36,10 +36,6 @@ export default function StopWatch({ interval, isStopped }) {
             const minutesStartDegree =
                 (360 / 60) * getMinutes(interval) +
                 (6 / 60) * getSeconds(interval);
-            console.log("secondsStartDegree");
-            console.log(secondsStartDegree);
-            console.log("minutesStartDegree");
-            console.log(minutesStartDegree);
             style.innerHTML =
                 "@keyframes clock-hand-rotate--minute { from {transform: rotate(" + minutesStartDegree + "deg)}" +
                 "to {transform: rotate(" + (minutesStartDegree + 360) + "deg)}}" +
