@@ -2,7 +2,7 @@
   "name": "stopwatch",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/AnastasiaSidorenko/StopWatch",
+  "homepage": "https://github.com/AnastasiaSidorenko/StopWatch_remarks",
   "dependencies": {
     "date-fns": "^2.0.1",
     "eslint": "^6.3.0",
