@@ -12,14 +12,9 @@ export default function App() {
    const [now, setNow] = useState(0);
    const [start, setStart] = useState(0);
    const [showClock, setShowClock] = useState(false);
-   // const[interval,setInterval] = useState(differenceInMilliseconds(now,start));
+
    const [myInterval, setMyInterval] = useState(null);
-   //const [duration, setDuration] = useState(0);
-   //UPDATED PART
-   // const [intervalMilliseconds, setintervalMilliseconds] = useState(0);
-   // const [intervalSeconds, setintervalSeconds] = useState(0);
-   // const [intervalMinutes, setintervalMinutes] = useState(0);
-   //
+   
    const [StartB, setStartB] = useState("START");
    const [LapB, setLapB] = useState("LAP");
    const [ResetB, setResetB] = useState("RESET");
@@ -38,10 +33,7 @@ export default function App() {
          clearInterval(myInterval);
       } else if (start > 0) {
          const id = setInterval(() => {
-            //   setNow(new Date().getTime());
-            //       // }, 73);
             setNow(getTime(new Date()));
-            // setInterval(differenceInMilliseconds(now,start));
          }, 73);
          setMyInterval(id);
       } else {
